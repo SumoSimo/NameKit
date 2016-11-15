@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5E1307721DDA9431006A61E5 /* NameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1307681DDA9431006A61E5 /* NameKit.framework */; };
 		5E1307791DDA9431006A61E5 /* NameKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E13076B1DDA9431006A61E5 /* NameKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E1307831DDA9582006A61E5 /* NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1307821DDA9582006A61E5 /* NameTests.swift */; };
+		5E1307851DDA99C8006A61E5 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1307841DDA99C8006A61E5 /* Name.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		5E13076C1DDA9431006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1307711DDA9431006A61E5 /* NameKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1307781DDA9431006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E1307821DDA9582006A61E5 /* NameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTests.swift; sourceTree = "<group>"; };
+		5E1307841DDA99C8006A61E5 /* Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			children = (
 				5E13076B1DDA9431006A61E5 /* NameKit.h */,
 				5E13076C1DDA9431006A61E5 /* Info.plist */,
+				5E1307841DDA99C8006A61E5 /* Name.swift */,
 			);
 			path = NameKit;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5E1307781DDA9431006A61E5 /* Info.plist */,
+				5E1307821DDA9582006A61E5 /* NameTests.swift */,
 			);
 			path = NameKitTests;
 			sourceTree = "<group>";
@@ -146,11 +152,13 @@
 					5E1307671DDA9431006A61E5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = QWKKLM397G;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					5E1307701DDA9431006A61E5 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = QWKKLM397G;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -195,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1307851DDA99C8006A61E5 /* Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1307831DDA9582006A61E5 /* NameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +328,7 @@
 		5E13077D1DDA9431006A61E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QWKKLM397G;
@@ -330,6 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.simontsai.NameKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -337,6 +349,7 @@
 		5E13077E1DDA9431006A61E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QWKKLM397G;
@@ -356,11 +369,14 @@
 		5E1307801DDA9431006A61E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QWKKLM397G;
 				INFOPLIST_FILE = NameKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simontsai.NameKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -368,6 +384,8 @@
 		5E1307811DDA9431006A61E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QWKKLM397G;
 				INFOPLIST_FILE = NameKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
