@@ -36,7 +36,9 @@ public struct Name {
   
   public var middleName: String? {
     
-    return components.count <= 2 ? .none : components.droppingEdges().joined(separator: " ")
+    let middleNameComponents = components.droppingEdges().joined(separator: " ")
+    
+    return middleNameComponents.isEmpty ? .none : middleNameComponents
     
   }
   
@@ -51,12 +53,6 @@ public struct Name {
 private extension Array {
   
   func droppingEdges() -> Array<Element> {
-    
-    guard count > 2 else {
-      
-      return []
-      
-    }
     
     return Array(dropFirst().dropLast())
     
