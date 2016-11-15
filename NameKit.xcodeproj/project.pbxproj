@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5E1307721DDA9431006A61E5 /* NameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1307681DDA9431006A61E5 /* NameKit.framework */; };
-		5E1307771DDA9431006A61E5 /* NameKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1307761DDA9431006A61E5 /* NameKitTests.swift */; };
 		5E1307791DDA9431006A61E5 /* NameKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E13076B1DDA9431006A61E5 /* NameKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		5E13076B1DDA9431006A61E5 /* NameKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameKit.h; sourceTree = "<group>"; };
 		5E13076C1DDA9431006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1307711DDA9431006A61E5 /* NameKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1307761DDA9431006A61E5 /* NameKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameKitTests.swift; sourceTree = "<group>"; };
 		5E1307781DDA9431006A61E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,6 @@
 		5E1307751DDA9431006A61E5 /* NameKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E1307761DDA9431006A61E5 /* NameKitTests.swift */,
 				5E1307781DDA9431006A61E5 /* Info.plist */,
 			);
 			path = NameKitTests;
@@ -205,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E1307771DDA9431006A61E5 /* NameKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
