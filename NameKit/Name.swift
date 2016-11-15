@@ -36,9 +36,9 @@ public struct Name {
   
   public var middleName: String? {
     
-    let middleNameComponents = components.droppingEdges().joined(separator: " ")
+    let middleName = components.droppingEdges().joined(separator: " ")
     
-    return middleNameComponents.isEmpty ? .none : middleNameComponents
+    return middleName.isEmpty ? .none : middleName
     
   }
   
