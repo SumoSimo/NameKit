@@ -6,6 +6,8 @@
 //  Copyright © 2016 Simon Tsai. All rights reserved.
 //
 
+/// Represents a name, from which the first, middle, and last names can be retrieved
+///
 public struct Name {
   
   private let name: String
